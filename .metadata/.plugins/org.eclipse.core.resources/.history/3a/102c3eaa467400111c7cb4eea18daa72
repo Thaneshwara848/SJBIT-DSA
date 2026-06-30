@@ -1,0 +1,31 @@
+package day2;
+import java.util.Stack;
+public class Demo01StackDemo {
+    public static void main(String[] args) {
+        Stack<Integer> stack = new Stack<>();
+        // Push
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push("ABCD");
+
+        System.out.println("Stack : " + stack);
+
+        // Peek
+        System.out.println("Top Element : " + stack.peek());
+
+        // Pop
+        System.out.println("Removed : " + stack.pop());
+
+        System.out.println("After Pop : " + stack);
+
+        // isEmpty
+        System.out.println("Is Empty : " + stack.isEmpty());
+    }
+}
+//
+//Stack : [10, 20, 30]
+//Top Element : 30
+//Removed : 30
+//After Pop : [10, 20]
+//Is Empty : false

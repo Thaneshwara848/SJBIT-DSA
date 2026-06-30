@@ -1,0 +1,17 @@
+package p1;
+
+public class Demo1 {
+	public static void main(String[] args) {
+		LIST : 
+				ArrayList
+				LinkedList
+				Stack
+		SET
+				HashSet
+				LinkedHashSet
+				TreeSet
+				
+			Queue: 
+					
+	}
+}

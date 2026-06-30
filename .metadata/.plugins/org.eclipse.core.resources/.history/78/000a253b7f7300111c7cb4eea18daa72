@@ -1,0 +1,19 @@
+package p1;
+class Progarms
+{
+		void prog1() {
+			System.out.println("Hi program1");
+		}
+		void prog2() {
+			System.out.println("Hi program2");
+		}
+		void prog11() {
+			System.out.println("Hi program11");
+		}
+}
+public class Demo1 {
+	public static void main(String[] args) {
+		Progarms p= new Progarms();
+		
+	}
+}

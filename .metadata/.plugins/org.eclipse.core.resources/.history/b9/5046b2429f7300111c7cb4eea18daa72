@@ -1,0 +1,20 @@
+package p6;
+class Parent
+{
+	int site= 5;
+	int mony=50000;
+	String car="BMW";
+	void use() {
+		System.out.println("Site : " +  site);
+		System.out.println("Money : "+ mony);
+		System.out.println("CAR : "+ car);
+	}
+}
+class Child
+{
+}
+public class Demo1 {
+	public static void main(String[] args) {
+		Parent p =  new Parent();p.use();
+	}
+}

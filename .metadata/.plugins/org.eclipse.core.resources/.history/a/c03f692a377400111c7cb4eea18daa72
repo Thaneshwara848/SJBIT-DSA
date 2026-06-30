@@ -1,0 +1,18 @@
+package z1;
+
+public class A {
+	int a=100;
+	int b=200;
+	int c = 300;
+	int d = 400;
+	void display() {
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		System.out.println(d);
+	}
+	public static void main(String[] args) {
+		A a = new A();
+		a.display();
+	}
+}

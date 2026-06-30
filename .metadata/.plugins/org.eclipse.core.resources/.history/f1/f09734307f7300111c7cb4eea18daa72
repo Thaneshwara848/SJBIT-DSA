@@ -1,0 +1,10 @@
+package p1;
+class Progarms
+{
+	
+}
+public class Demo1 {
+	public static void main(String[] args) {
+		
+	}
+}

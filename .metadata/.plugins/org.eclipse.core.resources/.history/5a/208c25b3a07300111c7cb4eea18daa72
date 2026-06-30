@@ -1,0 +1,30 @@
+package p6;
+class Employee
+{
+	int id;
+	String name;
+	int salary;
+	String desig;
+	void use() {
+		System.out.println("Site : " +  site);
+		System.out.println("Money : "+ mony);
+		System.out.println("CAR : "+ car);
+	}
+}
+class MyEmployee extends Employee
+{
+	int mony=10000;
+	void use() {
+		System.out.println("==========CHILD=====");
+		System.out.println("Site : " +  site);
+		System.out.println("Money : "+ mony);
+		System.out.println("Money : "+ super.mony);
+		System.out.println("CAR : "+ car);
+	}
+}
+public class Demo1 {
+	public static void main(String[] args) {
+		Parent p =  new Parent();p.use();
+		Child c = new Child();c.use();
+	}
+}

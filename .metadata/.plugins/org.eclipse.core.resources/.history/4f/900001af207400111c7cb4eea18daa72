@@ -1,0 +1,22 @@
+package day2;
+
+import java.util.*;
+
+public class MovieTicketQueue {
+
+    public static void main(String[] args) {
+
+        Queue<String> queue = new LinkedList<>();
+
+        queue.offer("Rahul");
+        queue.offer("Priya");
+        queue.offer("Amit");
+        queue.offer("Sneha");
+
+        while (!queue.isEmpty()) {
+            System.out.println(queue.poll() + " received the movie ticket.");
+            System.out.println("Waiting: " + queue);
+            System.out.println();
+        }
+    }
+}

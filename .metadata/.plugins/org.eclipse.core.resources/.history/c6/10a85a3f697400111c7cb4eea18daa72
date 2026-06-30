@@ -1,0 +1,53 @@
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.*;
+
+public class Demo04QueueEx1 {
+    public static void main(String[] args) {
+        Queue<String> queue = new LinkedList<>();
+       
+        Scanner sc = new Scanner(System.in);
+        System.out.println("🎬 Welcome to PVR Cinemas");
+        System.out.println("🔥 Avengers: Endgame Ticket Booking Started");
+        System.out.println("-------------------------------------------");
+        System.out.println("Enter the no of customers : ");
+        int noOfCust = sc.nextInt();
+        System.out.println("Enter the name of the customers: ");
+        for(int i=0;i<noOfCust;i++) {
+        	String name = sc.next();
+        	queue.offer(name);
+        }
+        int totalTic = 5;
+        System.out.println();
+        int custCnt = queue.size();
+        // Serve customers one by one
+        if(custCnt>5) {
+        	System.out.println("ERROR!, No tickets are available.");
+        }
+        while (!queue.isEmpty()) {
+        	System.out.println("Enter the no of tickect you want:");
+        	int cnt = sc.nextInt();
+        	if(cnt>2) {
+        		System.out.println("You cannot book more than 2 tickects at a time!");
+        	}
+        	if(totalTic==0) {
+            	System.out.println("No tickects are available to book.");
+            }
+        	else {
+        			while(cnt!=0) {
+        				System.out.println("🎫 Ticket Issued to : " + queue.poll());
+        				totalTic--;
+        				cnt--;
+        			}
+                	System.out.println("The customers in the queue are : "+ queue);
+                	System.out.println("No of customers in the queue are : " + queue.size());
+             
+            		
+                
+        	}
+            
+            System.out.println("-------------------------------------------");
+        }
+        System.out.println("🎉 All movie tickets have been issued!");
+    }
+}

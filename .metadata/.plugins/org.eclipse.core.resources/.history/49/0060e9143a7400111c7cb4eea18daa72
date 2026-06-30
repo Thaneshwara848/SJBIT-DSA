@@ -1,0 +1,15 @@
+package z11;
+class Car
+{
+	final int speed=250;
+//	if its final keyword we can not modiy / re assign
+
+}
+public class Demo1 {
+	public static void main(String[] args) {
+		Car c = new Car();
+		System.out.println(c.speed);
+		//c.speed=2500;
+		//System.out.println(c.speed);
+	}
+}

@@ -1,0 +1,25 @@
+package z11;
+class Car
+{
+	final int speed=250;
+//	if its final keyword we can not modiy / re assign
+	void gare();
+}
+class Bmw extends Car
+{	
+}
+class Benz extends Car
+{
+	@Override
+	void gare(){
+		System.out.println("Auto gare car ");
+	}
+}
+public class Demo1 {
+	public static void main(String[] args) {
+		Bmw b= new Bmw();
+		b.gare();
+		Benz b1= new Benz();
+		b1.gare();
+	}
+}

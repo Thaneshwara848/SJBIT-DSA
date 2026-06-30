@@ -1,0 +1,16 @@
+package p6;
+class P1
+{
+	
+}
+class C1 extends P1
+{
+	
+}
+class C2 extends P1
+{
+	
+}
+public class Demo2 {
+
+}

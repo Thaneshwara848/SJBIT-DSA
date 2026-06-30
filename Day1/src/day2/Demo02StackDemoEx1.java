@@ -1,0 +1,61 @@
+package day2;
+import java.util.Stack;
+public class Demo02StackDemoEx1 {				//OnlineExamUndo
+    public static void main(String[] args) {
+        Stack<String> answerStack = new Stack<>();
+        answerStack.push("Q1 -> A");
+        answerStack.push("Q2 -> C");
+        answerStack.push("Q3 -> B");
+        answerStack.push("Q4 -> D");
+        System.out.println("===== ONLINE EXAM =====");
+        System.out.println("\nStudent Submitted Answers:");
+        System.out.println(answerStack);
+        // Display last answered question
+        
+        System.out.println("\nLatest Answer : " + answerStack.peek());
+        // Student clicks Undo
+        
+        System.out.println("\nOops! Wrong Answer.");
+        System.out.println("Undo Last Answer : " + answerStack.pop());
+        
+        System.out.println("\nRemaining Answers:");
+        System.out.println(answerStack);
+//
+        // Next latest answer
+        System.out.println("\nCurrent Last Answer : " + answerStack.peek());
+        
+        System.out.println("\nChecking if Q1 is answered: "+answerStack.contains("Q1 -> A"));
+        if(answerStack.contains("Q1 -> A")) {
+        	System.out.println("Yes, it is answered");
+        }
+        else {
+        	System.out.println("Not answered");
+        }
+        
+        System.out.println("\nChecking if no questions are answered: "+answerStack.isEmpty());
+        if(answerStack.isEmpty()) {
+        	System.out.println("No questions are answered.");
+        	
+        }else {
+        	System.out.println("Some or all questions answered.");
+        }
+        
+        System.out.println("\nChecking the total number of questions answered: "+answerStack.size());
+        
+//        System.out.println("RESET EXAM");
+        answerStack.clear();
+        
+//       System.out.println("Answered: "+answerStack);
+        if(answerStack.isEmpty()) {
+        	System.out.println("No questions answered to reset.");
+        }else {
+        	answerStack.clear();
+        	System.out.println("Answered: "+answerStack);
+        }
+    }
+}
+//Imagine you're taking an online exam. 
+//You answer Q1, Q2, Q3, and Q4. Suddenly, 
+//you realize Q4 is wrong. When you click Undo, the system removes only Q4,
+//not Q1, Q2, or Q3. This happens because the system uses a Stack,
+//where the Last Answer Entered is the First Answer Removed (LIFO).

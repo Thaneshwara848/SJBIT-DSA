@@ -1,0 +1,28 @@
+package day2;
+
+import java.util.*;
+//FoodOrderQueue
+public class Demo05QuequDemoEx2 {
+
+    public static void main(String[] args) {
+
+        Queue<String> orders = new LinkedList<>();
+
+        orders.offer("Pizza - Rahul");
+        orders.offer("Burger - Priya");
+        orders.offer("Biryani - Amit");
+        orders.offer("Ice Cream - Sneha");
+
+        while(!orders.isEmpty()){
+
+            System.out.println("👨‍🍳 Preparing : " + orders.peek());
+
+            orders.poll();
+
+            System.out.println("Pending : " + orders);
+            System.out.println("-------------------");
+        }
+
+        System.out.println("✅ All Orders Delivered");
+    }
+}

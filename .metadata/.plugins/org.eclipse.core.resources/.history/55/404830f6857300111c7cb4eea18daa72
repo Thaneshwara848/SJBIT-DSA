@@ -1,0 +1,42 @@
+package p1;
+import java.util.Scanner;
+class Progarms
+{
+		void prog1() {
+			System.out.println("Hi program1");
+		}
+		void prog2() {
+			System.out.println("Hi program2");
+		}
+		void prog11() {
+			System.out.println("Hi program11");
+		}
+}
+public class Demo1 
+{
+	public static int reverse(int num)
+	{
+		int temp=num;
+		int rev =0;
+		while(temp!=0)
+		{
+			int ld = temp%10;
+			rev=(rev*10)+ld;
+			temp/=10;
+		}
+		return rev;
+		
+	}
+	public static void main(String[] args) {
+		Progarms p= new Progarms();
+		//p.prog1();
+		p.prog2();
+		//p.prog11();
+		int num=121;
+		int rev=reverse(num);
+		System.out.println("Reverse:"+rev);
+		System.out.print("Is Palindrome:");
+		System.out.print(rev==num);
+		
+	}
+}

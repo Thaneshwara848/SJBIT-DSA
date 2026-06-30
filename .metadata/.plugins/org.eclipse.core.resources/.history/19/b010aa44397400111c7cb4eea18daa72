@@ -1,0 +1,9 @@
+package z11;
+class Car
+{
+	int speed=250;
+
+}
+public class Demo1 {
+
+}

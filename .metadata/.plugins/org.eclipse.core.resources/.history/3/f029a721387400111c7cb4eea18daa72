@@ -1,0 +1,12 @@
+package z2;
+import z1.A;
+
+public class D  ex{
+	void display() {
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		System.out.println(d);
+	}
+}
+

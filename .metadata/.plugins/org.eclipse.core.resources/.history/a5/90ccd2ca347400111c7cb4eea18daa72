@@ -1,0 +1,97 @@
+//package day2;
+//
+//import java.util.*;
+////MovieTicketQueue
+////A new Avengers movie has been released. Many people are waiting to buy tickets.
+////The ticket counter serves one customer at a time.
+//public class Demo04QueueEx1 {
+//
+//    public static void main(String[] args) {
+//
+//        Queue<String> queue = new LinkedList<>();
+//
+//        queue.offer("Rahul");
+//        queue.offer("Priya");
+//        queue.offer("Amit");
+//        queue.offer("Sneha");
+//
+//        while (!queue.isEmpty()) {
+//            System.out.println(queue.poll() + " received the movie ticket.");
+//            System.out.println("Waiting: " + queue);
+//            System.out.println();
+//        }
+//    }
+//}
+//package day2;
+//
+//import java.util.*;
+//
+///*
+ * ===========================================
+ *      🎬 Avengers: Endgame Ticket Booking
+ * ===========================================
+ *
+ * Avengers: Endgame has been released today!
+ * Thousands of fans have gathered outside the theater.
+ *
+ * There is only ONE ticket counter available.
+ * The counter can serve only one customer at a time.
+ *
+ * Customers must wait in a queue.
+ *
+ * Customers Joining the Queue:
+ * --------------------------------
+ * Rahul
+ * Priya
+ * Amit
+ * Sneha
+ *
+ * The ticket counter follows the FIFO (First In First Out) principle.
+ *
+ * ✔ Rahul joined first, so Rahul gets the ticket first.
+ * ✔ Priya gets the ticket next.
+ * ✔ Amit gets the ticket after Priya.
+ * ✔ Sneha receives the ticket last.
+ *
+ * After receiving the ticket, the customer leaves the queue,
+ * and the next customer moves to the front.
+ *
+ * Write a Java program using Queue to simulate this ticket booking process.
+
+
+public class Demo04QueueEx1 {
+
+    public static void main(String[] args) {
+
+        Queue<String> queue = new LinkedList<>();
+
+        // Customers join the queue
+        queue.offer("Rahul");
+        queue.offer("Priya");
+        queue.offer("Amit");
+        queue.offer("Sneha");
+
+        System.out.println("🎬 Welcome to PVR Cinemas");
+        System.out.println("🔥 Avengers: Endgame Ticket Booking Started");
+        System.out.println("-------------------------------------------");
+        System.out.println("Customers Waiting : " + queue);
+        System.out.println();
+
+        // Serve customers one by one
+        while (!queue.isEmpty()) {
+
+            System.out.println("🎫 Ticket Issued to : " + queue.poll());
+
+            if (!queue.isEmpty()) {
+                System.out.println("⏳ Customers Waiting : " + queue);
+            } else {
+                System.out.println("✅ No Customers Waiting.");
+            }
+
+            System.out.println("-------------------------------------------");
+        }
+
+        System.out.println("🎉 All movie tickets have been issued!");
+    }
+}
+ */

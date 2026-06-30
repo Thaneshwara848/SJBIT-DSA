@@ -1,0 +1,39 @@
+package day2;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Demo03QueueDemo {
+    public static void main(String[] args) {
+        // Create Queue
+        Queue<Integer> queue = new LinkedList<>();
+        // isEmpty()
+        System.out.println("Is Queue Empty? " + queue.isEmpty());
+        // Enqueue (offer)
+        queue.offer(10);
+        queue.offer(20);
+        queue.offer(30);
+        System.out.println("\nAfter Enqueue:");
+        System.out.println("Queue : " + queue);
+        // Peek
+        System.out.println("\nFront Element : " + queue.peek());
+        // Size
+        System.out.println("Queue Size : " + queue.size());
+        // Dequeue (poll)
+        System.out.println("\nRemoved Element : " + queue.poll());
+        System.out.println("Queue : " + queue);
+        // Peek again
+        System.out.println("\nFront Element : " + queue.peek());
+        // Remove remaining elements
+        queue.poll();
+        queue.poll();
+        System.out.println("\nAfter Removing All Elements:");
+        System.out.println("Queue : " + queue);
+        // isEmpty()
+        System.out.println("Is Queue Empty? " + queue.isEmpty());
+        // Peek on Empty Queue
+        System.out.println("Peek on Empty Queue : " + queue.peek());
+        // Poll on Empty Queue
+        System.out.println("Poll on Empty Queue : " + queue.poll());
+    }
+}
