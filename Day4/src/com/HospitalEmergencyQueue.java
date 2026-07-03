@@ -23,7 +23,7 @@ public class HospitalEmergencyQueue {
 		}
 		System.out.println("Treatment Queue");
 		for(int i=0;i<time.length;i++){
-			System.out.println(time[i]+" "+flightId[i]+" Level-"+destination[i]);
+			System.out.println(time[i]+" "+flightId[i]+" "+destination[i]);
 		}
 	}
 }
