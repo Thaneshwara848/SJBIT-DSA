@@ -1,7 +1,5 @@
 package comP;
-
 import java.util.Scanner;
-
 public class PlaceZroesroRight {
 	static void move(int[] arr) {
 		int k=0;
